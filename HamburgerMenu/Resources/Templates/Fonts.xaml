@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <FontFamily x:Key="MyFont">/Resources/Fonts/SpaceMono-Regular.ttf #Space Mono</FontFamily>
+
+    <system:Double x:Key="FontSizeSmall">12</system:Double>
+    <system:Double x:Key="FontSizeRegular">16</system:Double>
+    <system:Double x:Key="FontSizeLarge">20</system:Double>
+    <system:Double x:Key="FontSizeExLarge">24</system:Double>
+
+    <Style TargetType="{x:Type Control}">
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="FontSize" Value="{StaticResource FontSizeRegular}"/>
+        <Setter Property="FontFamily" Value="{StaticResource MyFont}"/>
+    </Style>
+
+    <Style TargetType="{x:Type TextBlock}">
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="FontSize" Value="{StaticResource FontSizeRegular}"/>
+        <Setter Property="FontFamily" Value="{StaticResource MyFont}"/>
+    </Style>
+
+    <Style TargetType="{x:Type ListView}">
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="FontSize" Value="{StaticResource FontSizeLarge}"/>
+        <Setter Property="FontFamily" Value="{StaticResource MyFont}"/>
+    </Style>
+
+</ResourceDictionary>
